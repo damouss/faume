@@ -1,4 +1,4 @@
-<template>
+<template id="#optional-button">
     <section class="selection-products py-5">
         <div class="container-fluid py-5 overflow-hidden">
             <h2 class="min-h2 mb-5">Notre sélection</h2>
@@ -6,7 +6,7 @@
                 <div class="row ">
                     <div class="col col-md-3">
                         <div class="card">
-                                <img src="../assets/images/product1.jpeg" class="card-img-top" alt="produit 1">
+                            <img src="../assets/images/product1.jpeg" class="card-img-top" alt="produit 1">
                             <div class="card-body">
                                 <p class="title-product mb-0">T-shirt Homme</p>
                                 <p class="price-product mb-0">70,00 €</p>
@@ -33,7 +33,7 @@
                     </div>
                     <div class=" col  col-md-3">
                         <div class="card">
-                            <img  src="../assets/images/product4.jpeg" class="card-img-top" alt="produit 4">
+                            <img src="../assets/images/product4.jpeg" class="card-img-top" alt="produit 4">
                             <div class="card-body">
                                 <p class="title-product mb-0">Sac cuire</p>
                                 <p class="price-product mb-0">360,00 €</p>
@@ -48,7 +48,8 @@
 
 <script>
 export default {
-    name: 'SelectionProducts',
+    name: 'SelectionProducts',  
+
     mounted() {
     }
 }

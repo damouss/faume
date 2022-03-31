@@ -25,11 +25,25 @@
         background-color: #fff;
         mask: url(../images/icon-cart.svg) no-repeat center / contain;
         -webkit-mask: url(../images/icon-cart.png) no-repeat center /contain;
+        
+    }
+    .icon-and-badge{
+        &:hover{
+            .icon-cart{
+                background-color: #000;
+            }
+            .badge{
+                color: #000;
+            }
+        }
     }
     a{
         color:#fff;
         font-weight: 700;
         text-transform: uppercase;
+        &:hover{
+            color:#000;
+        }
     }
     .navbar-toggler {
         border: 0 !important;
@@ -219,6 +233,16 @@
                 }                
             }
             
+        }
+    }
+}
+
+.content-faq{
+    a{
+        &.faq-question{
+            font-size:16px;
+            font-weight: 700;
+            color:#000;
         }
     }
 }

@@ -25,7 +25,4 @@ export default {
 </script>
 
 <style lang="scss">
-.banner-large {
-
-}
 </style>
