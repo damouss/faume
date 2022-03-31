@@ -6,6 +6,7 @@
    width: 100%;
    top:0px;
    transition:all 0.3s ease;
+   z-index:9;
    .navbar-brand{
         height: 64px;
         width: 200px;
@@ -138,5 +139,42 @@
     @media screen and (max-width:991px) {
         min-height:calc(100vh - 80px)!important;
         margin-top:80px;
+    }
+}
+
+.collections{
+    .row{
+        .col-collections:first-child {            
+            padding-left:0;
+            padding-right:2px                      
+        }
+        .col-collections:last-child {           
+            padding-right:0; 
+            padding-left:2px;          
+        }
+        .card{            
+            min-height:85vh;
+            &.collection-f{
+                background:url(../images/robe.jpeg)center center/cover;
+            }
+            &.collection-h{
+                background:url(../images/homme.jpeg)center center/cover;
+            }
+        }
+        @media screen and (max-width:768px) {
+            .col-collections:first-child {            
+                padding-right:initial; 
+                padding-left:initial;     
+                padding-bottom: 2px;                 
+            }
+            .col-collections:last-child {           
+                padding-right:initial; 
+                padding-left:initial;   
+                padding-top: 2px;       
+            }
+            .card{            
+                min-height:50vh;
+            }
+        }
     }
 }
