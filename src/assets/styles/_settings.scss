@@ -1,0 +1,116 @@
+@import "~bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style-type: none;
+}
+button, input, textarea, select {
+    background-color: inherit;
+    border: 0;
+    outline: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+h1{
+    font-size: calc(1.625rem + 4.5vw);
+    font-weight: 700;    
+}
+h2{
+    font-size: calc(1.625rem + 1.5vw);
+    font-weight: 700;
+}
+.btn{
+    text-transform:uppercase;
+}
+.btn-outline-primary{
+    border: 1px solid #fff;
+    border-radius: 0;
+    padding:16px;
+    min-width:200px;
+    &:hover{
+        background:#000;
+        border-color: #000;
+    }
+    &.dark{
+        border: 1px solid #000;
+        color:#000;
+        &:hover{
+            color:#fff;
+        }
+    }
+}
+.btn-dark{
+    background:#000;
+    color: #fff;
+    border-radius: 0%;
+    padding:16px;
+    font-weight: 700;
+    &:hover{
+        background:#303030;
+    }
+    
+}
+/*MODAL CART*/
+.modal.fade.right.show .modal-dialog {
+    -webkit-transform: translate3d(0%, 0, 0);
+    transform: translate3d(0%, 0, 0);
+}
+.modal-dialog {
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin: 0;
+    max-width: unset;
+    left: 65%;
+    .modal-content {
+        border: 0;
+        min-height: 100vh;
+        border-radius: 0; 
+        .modal-header{
+            background:#000;
+            color:#fff;
+            text-transform: uppercase;
+            border-radius: 0;
+            font-weight: 700;
+            .btn-close{
+                color:#fff;
+                
+            }
+        }   
+        .modal-body{
+            .text-empty-cart{
+                font-size: 24px;
+                font-weight: 700;
+                text-transform: uppercase;
+            }
+            
+        }    
+        .modal-footer{
+            justify-content: center;
+            .btn-dark{                
+                min-width: 100%;
+            }
+        }
+    }
+    @media screen and (max-width:768px) {
+        width: 100%;
+        left:0;
+        
+    }
+}
