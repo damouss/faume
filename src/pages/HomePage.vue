@@ -6,6 +6,7 @@
         <CollectionsHF/>
         <SelectionProducts/>
         <PointOfSales/>
+        <FooterSmall/>
     </div>
 </template>
 
@@ -16,6 +17,7 @@ import SectionTwo from "@/components/SectionTwo.vue";
 import CollectionsHF from "@/components/CollectionsHF.vue";
 import SelectionProducts from "@/components/SelectionProducts.vue";
 import PointOfSales from "@/components/PointOfSales.vue";
+import FooterSmall from "@/components/FooterSmall.vue"
 
 export default {
     name: 'HomePage',
@@ -25,7 +27,8 @@ export default {
         SectionTwo,
         CollectionsHF,
         SelectionProducts,
-        PointOfSales
+        PointOfSales,
+        FooterSmall
         },
     mounted() {
 
