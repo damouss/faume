@@ -28,12 +28,13 @@
                     <li class="nav-item"><a class="nav-link" href="#"> Homme </a></li>
                     <li class="nav-item"><a class="nav-link" href="#"> Femme </a></li>
                     <li class="nav-item"><a class="nav-link" href="#"> Concept </a></li>
+                    <li class="nav-item"><router-link to="/faq" class="nav-link">Faq</router-link></li>
                 </ul>
-                <a class="navbar-brand d-none d-lg-flex mx-lg-auto" href="./index.html"></a>
+                <router-link to="/" class="navbar-brand d-none d-lg-flex mx-lg-auto"></router-link>
                 <ul class="navbar-nav col justify-content-end  d-none  d-sm-none d-md-none  d-lg-flex">
                     <li class="nav-item">
                         <a class="nav-link" href="#">
-                            <button type="button" class="position-relative" data-bs-toggle="modal" data-bs-target="#cartModal">
+                            <button type="button" class="position-relative icon-and-badge" data-bs-toggle="modal" data-bs-target="#cartModal">
                                 <div class="icon-cart"></div>
                                 <span class="position-absolute top-0 start-100 translate-middle badge">2</span>
                             </button>
