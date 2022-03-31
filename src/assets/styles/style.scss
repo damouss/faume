@@ -154,6 +154,9 @@
         }
         .card{            
             min-height:85vh;
+            .card-img-overlay{
+                padding:0.75rem;
+            }
             &.collection-f{
                 background:url(../images/robe.jpeg)center center/cover;
             }
@@ -175,6 +178,47 @@
             .card{            
                 min-height:50vh;
             }
+        }
+    }
+}
+
+.selection-products{
+    .title-product{
+        font-weight:700;
+        font-size: 16px;
+    }
+    .price-product{
+        font-size:16px;
+    }
+}
+
+.point-of-sales{
+    .row{
+        .col-point-of-sales {            
+            padding-left:0;
+            padding-right:0                      
+        }
+       
+        .card{            
+            min-height:85vh;
+            &.img-store{
+                background:url(../images/store.jpeg)center center/cover;
+            }
+            .card-img-overlay{
+                padding:0.75rem;
+            }
+           
+        }
+        @media screen and (max-width:768px) {            
+            .card{            
+                min-height:50vh;
+            }
+            .col-point-of-sales:last-child {            
+                .card{
+                    min-height:30vh;
+                }                
+            }
+            
         }
     }
 }
